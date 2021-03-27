@@ -1,0 +1,45 @@
+.main-page
+{
+ position:absolute;
+ display:block;
+ height: 68%;
+ padding: 20px 15%;
+ z-index: -2;
+ /* top: 140px;
+ bottom: 113.15px;
+ left:0;
+ right:0; */
+ box-sizing: border-box;
+ overflow:auto;
+}
+
+.images-container
+{ position:relative;
+  display:flex;
+  align-items: start; 
+  justify-content: center;
+  width:100%;
+  z-index: -2;
+  font-family: open-sans;
+}
+.main-page > p{
+  color:firebrick;
+  font-family: open-sans;
+}
+
+#img1
+{
+    width: inherit;
+}
+
+#img1:hover{
+   opacity: .45;
+   max-zoom: 30%;
+}
+@media screen and (max-width: 398px) 
+{  .main-page
+    {
+      top: 86px;
+    }
+   
+}

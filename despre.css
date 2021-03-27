@@ -1,0 +1,23 @@
+.about-us-title 
+{   position: absolute;
+    display:block;
+    box-sizing: border-box;
+    padding: 0px 35px;
+    font-family: open-sans;
+    overflow:auto;
+    top:140px;
+    bottom: 113.15px;
+    z-index:-2;
+}
+.about-us-title > h2
+{
+  color: firebrick;
+}
+
+@media screen and (max-width: 398px) 
+{
+    .about-us-title
+    {
+        top: 86px;
+    }
+}

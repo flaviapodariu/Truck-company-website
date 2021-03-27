@@ -1,0 +1,68 @@
+.careers-main
+{
+    position: absolute;
+    display:block;
+    box-sizing: border-box;
+    padding: 0px 35px;
+    font-family: open-sans;
+    overflow:auto;
+    top:140px;
+    bottom: 113.15px;
+    width:100%;
+    z-index: -2;
+}
+
+.informatii-suplimentare
+{
+   padding: 0px 32px;
+
+}
+
+.sbmit
+{
+  margin-bottom:7px;
+  background-color: firebrick;
+  color: white;
+  font-family: 'open-sans';
+  border-radius: 3px;
+}
+
+.all-jobs
+{
+    display:flex;
+    flex-direction:row;
+    font-family: open-sans;
+    flex-wrap:wrap;
+    
+}
+.all-jobs > div
+{   display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: grey;
+    min-height: 200px;
+    min-width: 290px;
+    margin:5px;
+
+
+}
+.all-jobs > div >div
+{
+    font-size: 20px;
+    font-weight: 1000;
+}
+@media screen and (max-width: 398px) 
+{
+    .careers-main
+    {
+        top: 86px;
+    }
+    
+    .all-jobs
+    {
+        flex-direction: column;
+    }
+}
