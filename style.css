@@ -1,0 +1,208 @@
+html{
+  height:100%;
+  overflow:hidden;
+}
+body{
+  margin:0;
+  padding-top: 0;
+}
+
+@font-face{
+  font-family: fontLogo;
+  src: url("fonts/62Dragz-vmAp9.otf");
+}
+
+@font-face{
+  font-family: open-sans;
+  src: url("fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+.logo-container{
+  position: absolute;
+  font-family: fontLogo;
+  font-size: 23px;
+  letter-spacing: 1.5px;
+  color: firebrick;
+  float:left;
+  top: 24px;
+  left: 10px;
+}
+
+.dropdown-btn, .dd-helper{
+  display: none;
+}
+.header
+{ 
+    background-color:black;
+    height: 80px;
+    position: sticky;
+    overflow:hidden;
+  
+}
+.menu
+{
+  display:block;
+  height: fit-content;
+  width:100%;
+ 
+}
+.menu > nav
+{ 
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height:3em;
+  font-family: open-sans;
+  font-size: 20px;
+  justify-content: space-around;
+  flex: 1;
+  
+}
+.menu > nav > a{
+  text-decoration:none;
+  color: #333338;
+}
+
+.menu > nav > a:hover
+{
+  color: firebrick;
+}
+
+.dropdown-contents{
+  display:none;
+}
+
+/* FOOTER pt toate paginie */
+
+.footer
+{ position:fixed;
+  height: 15%;
+  bottom: 0;
+  background-color:black;
+  width:100%;
+  z-index:1;
+}
+.shortcuts
+{
+  margin:7px 2%;
+  text-align:end;
+}
+.shortcuts > a
+{
+ position: relative;
+ font-family: open-sans;
+ font-size: 70%;
+ color: white;
+ text-decoration: none;
+}
+.copyright
+{ position:fixed;
+  color:lightgrey;
+  font-family: open-sans;
+  font-size: 65%;
+  bottom: 1.75em;
+}
+.shortcuts > a:hover{
+  color:firebrick;
+}
+
+
+@media screen and (max-width: 398px) {
+ 
+  .header
+{   background-color:black;
+    height: 86px;
+    position: sticky;
+}
+ .menu{
+   display:none;
+ }
+
+  .logo-container
+  { width:min-content;
+    font-family: fontLogo;  
+    font-size: 23px;
+    letter-spacing: 1.5px;
+    color: firebrick;
+    float:left;
+    top: 20px;
+ }
+  .dropdown{
+    display:inline-block;
+    position:absolute;
+    right:0;
+  }
+
+    .dropdown-btn{
+      color:white;
+      display: inline-block;
+      position:absolute;
+      border:none;
+      text-align:end;
+      font-size: 60px;
+      font-family: serif;
+      height: inherit;
+      right: 7px;
+      cursor:pointer;
+    
+    }
+    dropdown-btn::after{
+      content:'';
+      position:absolute;
+      top:50%;
+      right: 15px;
+      transform: translateY(-50%);
+      width: 0; 
+      height: 0; 
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid black;
+    }
+    .dd-helper
+    {
+      display:none;
+    }
+    .dropdown-contents
+    { display:none;
+      text-decoration: none;
+      color:black;
+      position: absolute;
+      top:86px;
+      width:205px;
+      height:1000%;
+      bottom:113.15px;
+      right:0;
+      background-color:whitesmoke;
+      overflow: hidden;
+      position:fixed;
+    }
+    .dropdown-contents > a
+    { float:left;
+      font-family:open-sans;
+      font-size:24px;
+      color:black;
+      text-decoration: none;
+      padding: 10px 20px;
+      width:100%;
+      overflow:hidden;
+      z-index: auto;
+    }
+    .dd-helper:checked + .dropdown-contents 
+    { 
+      display:block;
+    }
+  
+    .dd-helper + .dropdown-contents
+    {
+      display:none;
+    }
+   
+    
+
+.dropdown-contents > a:active 
+{
+  background-color:#dddd;
+  color:firebrick;
+}
+}
